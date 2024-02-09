@@ -1,0 +1,12 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "git.enableCommitSigning": true
+}
