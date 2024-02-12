@@ -1,9 +1,7 @@
-'use client';
-
-import { NavHeader } from './components/nav-header';
-import { Cards } from './components/cards';
+import { NavHeader } from '../components/nav-header';
+import { Cards } from '../components/cards';
 import Image from 'next/image';
-import { ScrollProgress } from './components/scroll-progress';
+import { ScrollProgress } from '../components/scroll-progress';
 
 export default function Home() {
   return (
@@ -170,39 +168,6 @@ export default function Home() {
                 />
                 <h2 className='text-medium mt-6 font-semibold text-white'>
                   Maanas Verma
-                </h2>
-                <p className='mt-1 text-sm font-light text-slate-200'>
-                  Software Developer
-                </p>
-                <ul className='mt-6 flex justify-center gap-4 text-sm'>
-                  <li>
-                    <a
-                      href='/'
-                      className='cursor rounded bg-slate-600 px-2 py-1'
-                    >
-                      X
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='cursor rounded bg-slate-600 px-2 py-1'
-                    >
-                      in
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className='rounded-2xl bg-slate-900 px-10 py-8'>
-                <Image
-                  src='/profile_3.jpg'
-                  className='m-auto rounded-full'
-                  alt='anurag'
-                  width={250}
-                  height={200}
-                />
-                <h2 className='text-medium mt-6 font-semibold text-white'>
-                  Anurag Porte
                 </h2>
                 <p className='mt-1 text-sm font-light text-slate-200'>
                   Software Developer
