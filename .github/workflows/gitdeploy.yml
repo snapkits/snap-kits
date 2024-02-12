@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use Node.js 20.x
         uses: actions/setup-node@v4
@@ -32,6 +32,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.MAANAS_GITHUB_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.MAANAS_GITHUB_TOKEN }}
           BRANCH: public # The branch the action will deploy to
           FOLDER: out # The folder the action will deploy to
