@@ -1,3 +1,5 @@
+'use client';
+
 import { NavHeader } from '../components/nav-header';
 import { Cards } from '../components/cards';
 import Image from 'next/image';
