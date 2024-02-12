@@ -5,7 +5,7 @@ name: GitHub Pages deploy
 
 on:
   push:
-    branches: [public]
+    branches: [git-deploy]
 
 permissions:
   contents: write
