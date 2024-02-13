@@ -1,13 +1,12 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-#
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
-#
 name: Deploy Next.js site to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["git-deploy"]
+    branches: [git-deploy]
+
+permissions:
+  contents: write
 
 jobs:
   # Build job
@@ -35,7 +34,8 @@ jobs:
         run: npm ci
 
       - name: Build with Next.js
-        run: npm ci && npm run build && ls -la && cat next.config.mjs && touch ./out/.nojekyll
+        run: npm run build && ls -la && cat next.config.mjs && touch ./out/.nojekyll
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
