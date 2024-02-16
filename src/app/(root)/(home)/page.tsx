@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Cards } from '@/components/Cards';
+import { Cards } from '@/components/ProjectCard';
 
 const Home = () => {
   return (
