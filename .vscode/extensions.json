@@ -10,7 +10,8 @@
     "esbenp.prettier-vscode",
     "sonarsource.sonarlint-vscode",
     "steoates.autoimport",
-    "oderwat.indent-rainbow"
+    "oderwat.indent-rainbow",
+    "bradlc.vscode-tailwindcss"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []
