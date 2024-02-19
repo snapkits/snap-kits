@@ -1,9 +1,24 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  compiler: {
-    styledComponents: true,
-  },
-  reactStrictMode: false,
-};
 
-module.exports = nextConfig;
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+
+module.exports = (phase, { defaultConfig }) => {
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
+    return {
+      compiler: {
+        styledComponents: true,
+      },
+      reactStrictMode: false,
+    };
+  }
+
+  return {
+    output: 'export',
+    images: {
+      loader: 'custom',
+      path: '/snap-kits',
+      loaderFile: './src/custom-loader.js',
+    },
+    basePath: '/snap-kits',
+  };
+};
