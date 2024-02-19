@@ -1,13 +1,15 @@
 /**
-* @type {import('next').NextConfig}
-*/
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  output: "export",
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
-  assetPrefix: '/./',
+  output: 'export',
+  images: { unoptimized: true },
+  experimental: { images: { unoptimized: true } },
+  // images: {
+  //   loader: 'akamai',
+  //   path: '',
+  // },
+  // assetPrefix: '/./',
   basePath: '/snap-kits',
 };
 
