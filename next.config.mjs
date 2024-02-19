@@ -3,8 +3,6 @@
  */
 const nextConfig = {
   output: 'export',
-  // images: { unoptimized: true, path: '/snap-kits'},
-  // experimental: { images: { unoptimized: true } },
   images: {
     loader: 'custom',
     path: '/snap-kits',
