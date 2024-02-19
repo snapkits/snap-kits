@@ -8,6 +8,7 @@ const nextConfig = {
     path: '',
   },
   assetPrefix: '/./',
+  basePath: '/snap-kits',
 };
 
 export default nextConfig;
