@@ -18,7 +18,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -47,7 +47,7 @@ jobs:
         run: npm ci
 
       - name: Build my App
-        run: npm run build && ls -la && cat next.config.js
+        run: npm run build && ls -la && cat next.config.mjs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
