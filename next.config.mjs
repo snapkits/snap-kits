@@ -3,13 +3,13 @@
  */
 const nextConfig = {
   output: 'export',
-  // images: { unoptimized: true },
+  // images: { unoptimized: true, path: '/snap-kits'},
   // experimental: { images: { unoptimized: true } },
   images: {
-    loader: 'akamai',
+    loader: 'custom',
     path: '/snap-kits',
+    loaderFile: './src/custom-loader.js',
   },
-  // assetPrefix: '/./',
   basePath: '/snap-kits',
 };
 
