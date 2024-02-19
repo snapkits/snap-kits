@@ -34,6 +34,7 @@ jobs:
         with:
           node-version: '20.x'
 
+      # Having this part of code for future use
       # - name: Setup Pages
       #   uses: actions/configure-pages@v4
       #   with:
