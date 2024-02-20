@@ -26,11 +26,12 @@ const Home = () => {
                         after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"
         >
           <Image
-            className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
+            className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
             src='/legos.svg'
             alt='Legos Logo'
-            width={300}
-            height={300}
+            width={400}
+            height={400}
+            style={{ width: '400px', height: '400px' }}
             priority
           />
         </div>
@@ -98,6 +99,7 @@ const Home = () => {
                 alt='anurag'
                 width={250}
                 height={200}
+                style={{ width: 'auto', height: '70%' }}
               />
               <h2 className='text-medium mt-6 font-semibold text-white'>
                 Anurag Porte
@@ -125,6 +127,7 @@ const Home = () => {
                 alt='anurag'
                 width={250}
                 height={200}
+                style={{ width: 'auto', height: '70%' }}
               />
               <h2 className='text-medium mt-6 font-semibold text-white'>
                 Maanas Verma

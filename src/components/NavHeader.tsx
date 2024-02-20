@@ -15,7 +15,7 @@ export function NavHeader() {
 
   return (
     <header className='fixed top-0 w-full bg-black shadow-md shadow-blue-500/20 '>
-      <section className='relative mx-auto my-6 flex max-w-7xl justify-center'>
+      <section className='relative mx-auto my-4 flex max-w-7xl justify-center'>
         <div className='flex w-full justify-between'>
           <div
             className="before:bg-gradient-radial flex items-center before:absolute before:h-[50px] before:w-full 
@@ -28,10 +28,11 @@ export function NavHeader() {
               alt='Snapkits Logo'
               width={200}
               height={48}
+              style={{ width: '200px', height: '48px' }}
               priority
             />
           </div>
-          <nav className='flex space-x-4 sm:justify-center'>
+          <nav className='flex items-center space-x-4 sm:justify-center'>
             {links.map((link) => (
               <Link
                 key={`${link.title}`}
