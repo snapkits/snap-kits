@@ -9,7 +9,6 @@ export function NavHeader() {
 
   const links: { title: string; url: string }[] = [
     { title: 'Home', url: '/' },
-    { title: 'About', url: '/about' },
     { title: 'Community', url: '/community' },
     { title: 'Contact Us', url: '/contact-us' },
   ];
