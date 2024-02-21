@@ -13,7 +13,11 @@ export function NavHeader() {
     <header className='fixed top-0 w-full bg-black shadow-md shadow-blue-500/20 '>
       <section className='max-w-8xl relative mx-6 my-4 flex'>
         <div className='flex w-full justify-between pe-4 ps-16'>
-          <div className='nav-gradiant-background'>
+          <div
+            className="before:bg-gradient-radial flex items-center before:absolute before:h-[50px] before:w-full 
+                        before:-translate-x-1/2 before:rounded-full before:from-sky-500 before:blur-2xl 
+                        before:content-[''] before:dark:opacity-50"
+          >
             <Image
               className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
               src='/snapkits.svg'
