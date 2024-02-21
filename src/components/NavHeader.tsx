@@ -3,8 +3,9 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ScrollProgress } from './ScrollProgress';
-import { SignedIn, UserButton } from '@clerk/nextjs';
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { navLinks } from '@/constants';
+import { Button } from './ui/button';
 
 export function NavHeader() {
   const pathname = usePathname();
@@ -47,6 +48,12 @@ export function NavHeader() {
         </div>
         <div className='flex items-center p-2'>
           <UserButton afterSignOutUrl='/' />
+          {/* Work on Progress */}
+          <SignedOut>
+            <Button asChild className='button bg-purple-gradient bg-cover'>
+              <Link href='/sign-in'>Login</Link>
+            </Button>
+          </SignedOut>
         </div>
       </section>
       <ScrollProgress />
