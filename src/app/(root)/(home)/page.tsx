@@ -4,7 +4,7 @@ import { Cards } from '@/components/ProjectCard';
 
 const Home = () => {
   return (
-    <main className='flex flex-col items-center justify-between px-20'>
+    <>
       <section className='my-10 flex w-full items-end justify-between p-10'>
         <div className='flex max-w-xl flex-col gap-16'>
           <h2 className='text-6xl font-semibold text-white'>Who we are?</h2>
@@ -151,7 +151,7 @@ const Home = () => {
           </ul>
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

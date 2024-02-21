@@ -24,7 +24,7 @@ const ContactUs = () => {
   };
 
   return (
-    <main className='flex flex-col items-center justify-between px-20'>
+    <>
       <section className='my-10 flex w-full flex-row-reverse items-end justify-between p-10'>
         <div
           className="before:bg-gradient-radial after:bg-gradient-conic relative z-[-1] 
@@ -171,7 +171,7 @@ const ContactUs = () => {
           )}
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

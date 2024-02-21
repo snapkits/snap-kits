@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ScrollProgress } from './ScrollProgress';
+import { UserButton } from '@clerk/nextjs';
 
 export function NavHeader() {
   const pathname = usePathname();
@@ -15,8 +16,8 @@ export function NavHeader() {
 
   return (
     <header className='fixed top-0 w-full bg-black shadow-md shadow-blue-500/20 '>
-      <section className='relative mx-auto my-4 flex max-w-7xl justify-center'>
-        <div className='flex w-full justify-between'>
+      <section className='max-w-8xl relative mx-6 my-4 flex'>
+        <div className='flex w-full justify-between pe-4 ps-16'>
           <div
             className="before:bg-gradient-radial flex items-center before:absolute before:h-[50px] before:w-full 
                         before:-translate-x-1/2 before:rounded-full before:from-sky-500 before:blur-2xl 
@@ -43,6 +44,9 @@ export function NavHeader() {
               </Link>
             ))}
           </nav>
+        </div>
+        <div className='flex items-center p-2'>
+          <UserButton afterSignOutUrl='/' />
         </div>
       </section>
       <ScrollProgress />
